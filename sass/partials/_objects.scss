@@ -72,3 +72,15 @@ input[type="text"]
 		border: 1px $input solid;
 	}
 }
+
+select
+{
+	padding: 3px;
+	border: 1px $input solid;
+	@include border-radius(3px);
+
+	&:hover, &:focus, &:active
+	{
+		border: 1px $input solid;
+	}
+}

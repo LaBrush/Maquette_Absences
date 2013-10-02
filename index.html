@@ -53,7 +53,20 @@
 
 		<article class="article">
 			<ul class="liste-eleves">
-				<li  class="search">
+				<li class="hour">
+					<label for="hour">Selectionner une heure</label>
+					<select id="hour">
+						<option value="1">8h-9h</option>
+						<option value="2">9h-10h</option>
+						<option value="3">10h-11h</option>
+						<option value="4">11h-12h</option>
+						<option value="5">13h30-14h30</option>
+						<option value="6">14h30-15h30</option>
+						<option value="7">15h30-16h30</option>
+						<option value="8">16h30-17h30</option>
+					</select>
+				</li>
+				<li class="search">
 					<label for="search">Rechercher un élève</label><input type="text" id="search">
 				</li>
 				<li class="person" onClick="MarkAway(0)">

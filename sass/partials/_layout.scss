@@ -234,6 +234,26 @@ $late: 			#ffc75f;
 	}
 }
 
+.hour
+{
+		display: block;
+	margin: 0 0 10px 15px;
+	width: 100%;
+
+	@include box-sizing(border-box);
+
+	label
+	{
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+
+	#hour
+	{
+		display: inline-block;
+	}
+}
+
 .liste-eleves
 {
 	@include box-sizing(border-box);
