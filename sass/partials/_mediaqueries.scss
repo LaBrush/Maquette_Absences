@@ -1,0 +1,40 @@
+@media all and (max-width: 500px) {
+	.slogan
+	{
+		display: none;
+	}
+
+	#logo
+	{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 880px) {
+	.person
+	{
+		width: 18%;
+	}
+}
+
+@media all and (max-width: 680px) {
+	.person
+	{
+		width: 25%;
+	}
+}
+
+@media all and (max-width: 510px) {
+	.person
+	{
+		width: 40%;
+	}
+}
+
+@media all and (max-width: 420px) {
+	.person
+	{
+		width: 100%;
+		margin: 15px 0;
+	}
+}
