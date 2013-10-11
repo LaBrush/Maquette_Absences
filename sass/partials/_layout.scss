@@ -186,7 +186,6 @@ $menu-color: 	inherit;
 
 /***********************************************************************************/
 /* Section */
-$article:		rgba(250, 250, 250, 0);
 $person: 		#cdf1e2;
 $away: 			#ffa9a9;
 $late: 			#ffc75f;
@@ -194,21 +193,21 @@ $late: 			#ffc75f;
 .section
 {
 	width: 100%;
-	padding: 90px 10% 20px 10%;
+	padding: 60px 10% 20px 10%;
 
 	@include box-sizing(border-box);
 }
 
 .article
 {
-	margin: 40px auto 60px auto;
-	background: $article;
+	margin: 35px auto;
 	max-width: 800px;
+	@include pie-clearfix;
 }
 
 .section-title
 {
-	margin: 40px;
+	margin: 10px;
 	text-align: center;
 	font-size: 1.8em;
 }
