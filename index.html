@@ -126,32 +126,6 @@
 		</article>
 	</section>
 
-	<script type="text/javascript">
-		var id = null;
-
-		var MarkAway = function(id){
-
-
-			var persons = document.getElementsByClassName("person");
-
-			if (persons[id].className == "person away"){
-
-				persons[id].className = "person late";
-			}
-
-			else if (persons[id].className == "person late"){
-
-				persons[id].className = "person";
-			}
-
-			else {
-
-				persons[id].className = "person away";
-			}
-		}
-
-	</script>
-
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/nav.min.js"></script>
 	<script src="js/appel.min.js"></script>
