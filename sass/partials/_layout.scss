@@ -6,6 +6,12 @@ $body:		rgb(250, 250, 250);
 	background: $body;
 }
 
+@mixin animate($time)
+{
+	@include transform(translateZ(0));
+	@include transition(all ease $time);
+}
+
 
 /***********************************************************************************/
 /* Header */
@@ -90,13 +96,13 @@ $notifications-color: 	$logo-color;
 	z-index: 1;
 	overflow: auto;
 	
-	@include transition(all ease 0.4s);
+	@include animate(0.4s);
 }
 
 #button-menu
 {
 	display: none;
-	@include transition(all ease 0.4s);
+	@include animate(0.4s);
 }
 
 .menu
@@ -104,7 +110,7 @@ $notifications-color: 	$logo-color;
 	cursor: pointer;
 	margin: 50px 0 0 0;
 
-	@include transition(all ease 0.4s);
+	@include animate(0.4s);
 
 	.h3
 	{
@@ -118,8 +124,6 @@ $notifications-color: 	$logo-color;
 	width: 100%;
 	padding: 8px 13px;
 	@include box-sizing(border-box);
-
-	@include transition(all ease 0.4s);
 
 	&:hover, &:active, &:focus
 	{
@@ -145,7 +149,6 @@ $notifications-color: 	$logo-color;
 /* Section */
 $person: 		#cdf1e2;
 $away: 			#ffa9a9;
-$late: 			#ffc75f;
 
 .section
 {
@@ -230,11 +233,6 @@ $late: 			#ffc75f;
 .away
 {
 	background: $away;
-}
-
-.late
-{
-	background: $late;
 }
 
 .eleve-img
