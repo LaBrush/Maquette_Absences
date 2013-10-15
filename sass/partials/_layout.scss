@@ -228,6 +228,14 @@ $away: 			#ffa9a9;
 	cursor: pointer;
 
 	background: $person;
+
+}
+
+.person-hidden
+{
+	display: none;
+	opacity: 0;
+
 }
 
 .away
